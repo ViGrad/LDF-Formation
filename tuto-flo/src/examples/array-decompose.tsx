@@ -5,5 +5,5 @@ const demo = () => {
 
 const [a, b] = demo()
 
-a
-b
+console.log(a) // 1
+console.log(b) // 2

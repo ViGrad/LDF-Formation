@@ -19,5 +19,5 @@ const before = getVariable()
 setVariable("salut")
 const after = getVariable()
 
-before
-after
+console.log(before) // ""
+console.log(after) // "salut"
