@@ -1,6 +1,8 @@
 import React from "react"
+
 interface IFormFieldProps {
   label: string
+  value: string
   onChange: (text: string) => void
 }
 
@@ -11,7 +13,7 @@ const FormField = (props: IFormFieldProps) => {
   return (
     <div>
       <label> {props.label} </label>
-      <input onChange={handleChange} />
+      <input value={props.value} onChange={handleChange} />
     </div>
   )
 }
