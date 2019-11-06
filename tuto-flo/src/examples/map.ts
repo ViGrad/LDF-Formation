@@ -1,3 +1,4 @@
+// @ts-ignore
 const array = ["Vincent", "Nabil", "Florian"]
 
 const newArray = array.map((x: string) => { 
