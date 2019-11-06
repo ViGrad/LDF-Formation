@@ -1,22 +1,16 @@
 import React from "react"
 import "./App.css"
-import { ChangeEvent } from "react"
 import TextRender from "./components/text-render"
+import Input from "./components/input"
 
 const App: React.FC = () => {
   const [sentence, setSentence] = React.useState(
-    "Saut le monde pas comme d'hablitude"
+    "Salut le monde pas comme d'habitude"
   )
-
-  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setSentence(event.target.value)
-  }
-
+  
   return <div className="App">
-    <div>
-      <input onChange={handleChange} />
-    </div>
-    <TextRender text={sentence}/>
+    <Input defaultValue={sentence} onChange={setSentence} />
+    <TextRender text={sentence} />
   </div>
 }
 

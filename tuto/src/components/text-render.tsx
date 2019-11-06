@@ -1,11 +1,11 @@
 import React from "react"
 
-
-
-const TextRender = (props: any) => {
-  return (
-    <p>{props.text}</p>
-  )
+export interface ITextRenderProps {
+  text: string
 }
 
-export default TextRender
+export default ({
+  text
+}: ITextRenderProps) => {
+  return <p>{text}</p>
+}
