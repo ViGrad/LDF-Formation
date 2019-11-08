@@ -1,5 +1,6 @@
 import React from "react"
 import { iarticle as IArticle } from "../models/article"
+import {Link} from "react-router-dom"
 
 // interface IArtilceListprops{
 //     data : IArticle[]
@@ -124,9 +125,10 @@ const Articlelist = () => {
               <td>{x.title}</td>
               <td>{x.body}</td>
               <td>
-                <a href="#" onClick={handleUpdateClick(x)}>
-                  Update
-                </a>
+                <Link to={"article/"+x.id} >Update</Link>
+                {/* <a href="#" onClick={handleUpdateClick(x)}>
+                  
+                </a> */}
               </td>
               <td>
                 <a href="#" onClick={handleDeleteClick(x.id)}>
