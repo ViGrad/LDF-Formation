@@ -3,7 +3,7 @@ const promise = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve({message: "bonjour"})
   }, 1000)
-  //reject("Error!")
+  reject("Error!")
 })
 
 promise.then((res: any) => {
